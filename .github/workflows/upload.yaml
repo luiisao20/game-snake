@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v4
         with: 
           push: true
-          tag:
+          tags:
             ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
             ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:{{ github.sha }}
